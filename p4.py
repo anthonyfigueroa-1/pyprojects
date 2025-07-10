@@ -31,6 +31,8 @@ def main():
                 if delete in tasks:
                     tasks.remove(delete)
                     print("Task removed.")
+                else:
+                    print(f"No tasks found that match {delete}")
             case 4:
                 print("Goodbye!")
                 break
