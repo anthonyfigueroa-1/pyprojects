@@ -33,11 +33,10 @@ def main():
                     print("-----")
                     for i, task in enumerate(tasks, start=1):
                         print(f"{i}. {task}")
-                        print("-----")
+                    print("-----")
             case 2:
-                tasks.append(input("Enter task to add: "))
-                for i in range(len(tasks)):
-                    tasks[i] = tasks[i].strip()
+                new_task = input("Enter task to add: ").strip()
+                tasks.append(new_task)
                 print("Task added.")
             case 3:
                 delete = input("Enter task to remove: ")
@@ -47,6 +46,7 @@ def main():
                 else:
                     print(f"No tasks found that match {delete}")
             case 4:
+                print("Saving tasks to tasks.txt.")
                 print("Goodbye!")
                 break
             case _:
