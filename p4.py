@@ -21,10 +21,14 @@ def main():
                     print("There are no tasks.")
                     length = 0
                 else:                    
-                    for i in range(length):
-                        print(f"{i + 1}. {tasks[i]}")
+                    print("-----")
+                    for i, task in enumerate(tasks, start=1):
+                        print(f"{i}. {task}")
+                    print("-----")
             case 2:
                 tasks.append(input("Enter task to add: "))
+                for i in range(len(tasks)):
+                    tasks[i] = tasks[i].strip()
                 print("Task added.")
             case 3:
                 delete = input("Enter task to remove: ")
