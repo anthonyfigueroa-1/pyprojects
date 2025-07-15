@@ -60,4 +60,4 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\nExiting...")
+        print("\nExiting without saving to tasks.txt...")
