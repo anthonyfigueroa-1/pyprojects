@@ -8,12 +8,12 @@ def wfile(file, downsites, option):
     with open(file, "w") as file:
         if option == 4:
             print("\nTTS message exported to tts_message.txt:")
-            tts = f"The following sites are currently down: {", ".join(downsites)}"
+            tts = f"The following sites are currently down: {', '.join(downsites)}"
             print(tts)
             file.write(tts)
         elif option == 5:
             print("\nEmail message exported to ooo_email.txt:")
-            ooo = f"Outages currently affect: {", ".join(downsites)}. Our network team is working on resolution."
+            ooo = f"Outages currently affect: {', '.join(downsites)}. Our network team is working on resolution."
             print(ooo)
             file.write(ooo)
         elif option == 6:
@@ -25,7 +25,7 @@ def main():
 
     try:
         tryfile(downsites)
-    except FileNotFound:
+    except FileNotFoundError:
         print("\noutages.txt does not exist... creating file")
 
 
@@ -48,10 +48,13 @@ def main():
 
         match option:
             case 1:
-                print("\n----- Down Sites -----")
-                for i, site in enumerate(downsites, start=1):
-                    print(f"{i}. {site}")
-                print("----------------------")
+                if len(downsites) <= 0:
+                    print("No down sites right now.")
+                else:
+                    print("\n----- Down Sites -----")
+                    for i, site in enumerate(downsites, start=1):
+                        print(f"{i}. {site}")
+                    print("----------------------")
             case 2:
                 newdown = input("\nEnter site name to add: ").strip()
                 downsites.append(newdown)
