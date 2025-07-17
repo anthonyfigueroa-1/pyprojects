@@ -59,20 +59,29 @@ def main():
                 newdown = input("\nEnter site name to add: ").strip()
                 downsites.append(newdown)
             case 3:
-                delete = input("\nEnter site name to remove: ").strip()
-                found = False
-                for site in downsites:
-                    if site.lower() == delete.lower():
-                        print(f"{site} has been removed from the outage list.")
-                        downsites.remove(site)
-                        found = True
-                        break
-                if not found:
-                    print(f"Could not find '{delete}' in Down Sites")
+                if len(downsites) <= 0:
+                    print("No down sites to remove as there are no sites down.")
+                else:
+                    delete = input("\nEnter site name to remove: ").strip()
+                    found = False
+                    for site in downsites:
+                        if site.lower() == delete.lower():
+                            print(f"{site} has been removed from the outage list.")
+                            downsites.remove(site)
+                            found = True
+                            break
+                    if not found:
+                        print(f"Could not find '{delete}' in Down Sites")
             case 4:
-                wfile("tts_message.txt", downsites, option) 
+                if len(downsites) <= 0:
+                    print("No down sites to generate tts message for.")
+                else:
+                    wfile("tts_message.txt", downsites, option) 
             case 5:
-                wfile("ooo_email.txt", downsites, option)
+                if len(downsites) <= 0:
+                    print("No down sites to generate ooo email for.")
+                else:
+                    wfile("ooo_email.txt", downsites, option)
             case 6:
                 wfile("outages.txt", downsites, option)
                 print("\nSaving outages to outages.txt...")
