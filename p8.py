@@ -1,0 +1,92 @@
+def load_tickets():
+    import json
+
+    with open("tickets.json", "r") as file:
+        tickets = json.load(file)
+    return tickets
+
+def filter_tickets_by_status(tickets):
+    active_tickets = [t for t in tickets if t["status"].lower() in ["open", "pending"]]
+
+    return active_tickets
+
+def format_tts_message(tickets):
+    temp = [t["site"] for t in tickets]
+
+    with open("tts_message.txt", "w") as file:
+            file.write(f"Currently affected sites are: {' and '.join(temp)}.")
+
+def write_markdown_table(tickets):
+    with open("status_table.md", "w") as file:
+        header = ["Site", "Ticket ID", "Status"]
+        width = [10, 9, 8]
+        head = f"| {header[0]:<10} | {header[1]:^9} | {header[2]:>8} |\n" 
+        seperator = "|-" + "-|-".join("-" * width[i] for i in range(len(header))) + "-|\n"
+        file.write(head)
+        file.write(seperator)
+        for ticket in tickets:
+            row = f"| {ticket['site']:<10} | {ticket['ticket_id']:^9} | {ticket['status']:<8} |\n"
+            file.write(row)
+
+def save_file(filename, content):
+    with open(filename, "w") as file:
+        for line in content:
+            file.write(line + "\n")
+def main():
+    try:
+        tickets = load_tickets()
+    except FileNotFoundError:
+        print("Error: tickets.json not found.")
+        exit()
+    if not tickets:
+        print("Error: tickets.json is empty.")
+        exit()
+        
+    while True:
+        print("\n1. View All Tickets")
+        print("2. Filter by Status")
+        print("3. Export Active Sites to status_update.txt")
+        print("4. Export TTS Message")
+        print("5. Export Markdown-style Status Table")
+        print("6. Exit")
+
+        while True:
+            try:
+                choice = int(input("\nEnter option: ").strip())
+                break
+            except ValueError:
+                print("Enter in a valid option!!!")
+
+        match choice:
+            case 1:
+                print()
+                for ticket in tickets:
+                    print(f"Ticket #{ticket.get("ticket_id", "N/A")}","-", ticket.get("site", "N/A"), f"({ticket.get("status", "N/A")})")
+            case 2:
+                active = filter_tickets_by_status(tickets)
+                print("Active Outages:")
+                for site in active:
+                    print("- Site:", site.get("site", "N/A"), "| Ticket-ID:", site.get("ticket_id", "N/A"), "| Status:", site.get("status", "N/A"))
+            case 3:
+                active = filter_tickets_by_status(tickets)
+                save_file("status_update.txt", active)
+                print("Saved Active Sites to status_update.txt successfully.")
+            case 4:
+                active = filter_tickets_by_status(tickets)
+                format_tts_message(active)
+                print("Updated tts message.")
+            case 5:
+                write_markdown_table(tickets)
+                print("Updated table file.")
+            case 6:
+                print("Exiting")
+                break
+            case _:
+                print("Error: Enter in a valid option.")
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("Exiting without saving...")

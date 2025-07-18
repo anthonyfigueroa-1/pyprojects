@@ -1,0 +1,6 @@
+[
+  {"ticket_id": 12345, "site": "Chicago", "status": "Open"},
+  {"ticket_id": 12346, "site": "NYC", "status": "Closed"},
+  {"ticket_id": 12347, "site": "Dallas", "status": "Pending"},
+  {"ticket_id": 12348, "site": "Denver", "status": "Resolved"}
+]
