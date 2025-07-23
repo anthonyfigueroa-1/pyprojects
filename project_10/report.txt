@@ -1,0 +1,15 @@
+===== Ticket Summary Report =====
+[2025-07-01] - #101 WAN Latency
+Status: Open | Priority: High | Assigned: Rajiv Patel
+
+[2025-07-01] - #102 Switch reboot
+Status: Closed | Priority: Medium
+Resolution Time: 2.4 hours
+
+[2025-07-01] - #103 Firewall misconfiguration
+Status: In Progress | Priority: High | Assigned: Tina Green
+Resolution Time: 8.2 hours
+
+Total Tickets: 3
+Average Resolution Time: 5.3 hours
+=================================

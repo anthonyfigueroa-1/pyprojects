@@ -13,6 +13,7 @@ def get_parse_args():
 
     parser.add_argument("--status", help="Filter by status")
     parser.add_argument("--priority", help="Filter by priority")
+    parser.add_argument("--save", help="Filename to save report to")
 
     return parser.parse_args()
 
@@ -20,8 +21,11 @@ def format_ticket(ticket):
     from datetime import datetime
     formatted_ticket = []
 
-    ts = datetime.strptime(ticket.get("created", "Not Found"), "%Y-%m-%dT%H:%M:%S")
-    date = ts.strftime("%Y-%m-%d")
+    try:
+        ts = datetime.strptime(ticket.get("created", "Not Found"), "%Y-%m-%dT%H:%M:%S")
+        date = ts.strftime("%Y-%m-%d")
+    except (KeyError, ValueError):
+        ts = None
 
     formatted_ticket.append(f"[{date}] - #{ticket.get("id", "Not Found")} {ticket.get("title", "Not Found")}")
 
@@ -42,7 +46,7 @@ def filter_tickets(tickets, status=None, priority=None):
         (status is None or t.get("status", "Not Found").lower() == status.lower()) and
         (priority is None or t.get("priority", "Not Found").lower() == priority.lower())]
 
-def generate_ticket_report(tickets, status, priority):
+def generate_ticket_report(tickets, status, priority, save=None):
     report = []
     total_tickets = int(0)
     report.append("===== Ticket Summary Report =====")
@@ -73,6 +77,12 @@ def generate_ticket_report(tickets, status, priority):
     for line in report:
         print(line)
 
+    if save:
+        print(f"\nSaving to {save}")
+        with open(save, "w") as file:
+            for line in report:
+                file.write(line + "\n")
+
 def main():
     try:
         tickets = load_ticket_data("tickets.json")
@@ -86,9 +96,10 @@ def main():
     args = get_parse_args()
     status = args.status.strip() if args.status else None
     priority = args.priority.strip() if args.priority else None
+    save = args.save.strip() if args.save else None
 
     filtered_tickets = filter_tickets(tickets, status=status, priority=priority)
-    generate_ticket_report(filtered_tickets, status, priority)
+    generate_ticket_report(filtered_tickets, status, priority, save)
 
 
 if __name__ == "__main__":
