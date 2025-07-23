@@ -1,0 +1,28 @@
+[
+  {
+    "id": 101,
+    "title": "WAN Latency",
+    "status": "Open",
+    "priority": "High",
+    "assigned_to": "Rajiv Patel",
+    "created": "2025-07-01T13:45:00"
+  },
+  {
+    "id": 102,
+    "title": "Switch reboot",
+    "status": "Closed",
+    "priority": "Medium",
+    "created": "2025-07-01T09:30:00",
+    "resolution_hours": 2.4
+  },
+  {
+    "id": 103,
+    "title": "Firewall misconfiguration",
+    "status": "In Progress",
+    "priority": "High",
+    "assigned_to": "Tina Green",
+    "created": "2025-07-01T08:00:00",
+    "resolution_hours": 8.2
+  }
+]
+
