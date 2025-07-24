@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2025-07-21T02:14:00",
+    "host": "host01",
+    "service": "Disk usage",
+    "severity": "CRITICAL",
+    "message": "Disk usage at 95%",
+    "acknowledged": false
+  },
+  {
+    "id": 2,
+    "timestamp": "2025-07-21T02:16:00",
+    "host": "host02",
+    "service": "CPU load",
+    "severity": "WARNING",
+    "message": "1 min load average over threshold",
+    "acknowledged": true
+  },
+  {
+    "id": 3,
+    "timestamp": "2025-07-21T03:10:00",
+    "host": "host03",
+    "service": "Memory usage",
+    "severity": "INFO",
+    "message": "Memory usage normal",
+    "acknowledged": false
+  },
+  {
+    "id": 4,
+    "timestamp": "2025-07-21T03:25:00",
+    "host": "host04",
+    "service": "Network check",
+    "severity": "CRITICAL",
+    "message": "Ping failure to upstream gateway",
+    "acknowledged": false
+  }
+]

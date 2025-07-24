@@ -1,0 +1,6 @@
+
+===== ALERT DIGEST =====
+[2025-07-21 02:16] host02 - 1 min load average over threshold (WARNING)
+Unacknowledged Only: Yes
+========================
+
