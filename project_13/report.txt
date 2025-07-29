@@ -1,0 +1,12 @@
+[2025-07-25 14:09] Hardware - Network Adapter Status Changed
+Device: 3-1655 | Org: None
+Description: Network Adapter Status changed:  InterfaceName : 'Intel(R) Wi-Fi 6E AX211 160MHz' InterfaceIndex : 12 Status changed : 'Down' -> 'Up'
+
+[2025-07-25 14:09] Hardware - Network Adapter Deleted
+Device: 3-1655 | Org: None
+Description: Network Adapter removed: 'Realtek USB GbE Family Controller', MacAddress: 'AC:91:A1:94:E0:4C', IPAddress: '10.0.20.123;fe80::ab68:633b:1067:33e5'
+
+[2025-07-25 04:09] Software - Software Updated
+Device: 3-1655 | Org: None
+Description: Software updated: 'Microsoft.XboxGamingOverlay', Version: '7.325.7090.0', User: '<System>'
+

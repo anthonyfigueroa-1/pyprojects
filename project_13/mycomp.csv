@@ -1,0 +1,129 @@
+Organization,Device,Group,Activity,Description,User,Date
+Hospitality,3-1655,Hardware,Network Adapter Status Changed,Network Adapter Status changed:  InterfaceName : 'Intel(R) Wi-Fi 6E AX211 160MHz' InterfaceIndex : 12 Status changed : 'Down' -> 'Up',,2025-07-28T22:00:14.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Deleted,"Network Adapter removed: 'Realtek USB GbE Family Controller', MacAddress: 'AC:91:A1:94:E0:4C', IPAddress: '192.168.86.23;2600:6c4e:187f:6581:dd51:af0b:633c:b2fc|fd4a:10a9:64dd:854f:e43c:d580:8386:cfbb|2600:6c4e:187f:6581:28d1:25ac:8ccd:bd21|fd4a:10a9:64dd:854f:28d1:25ac:8ccd:bd21|fe80::ab68:633b:1067:33e5'",,2025-07-28T22:00:14.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Status Changed,Network Adapter Status changed:  InterfaceName : 'Intel(R) Wi-Fi 6E AX211 160MHz' InterfaceIndex : 12 Status changed : 'Up' -> 'Down',,2025-07-28T20:18:03.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download is complete. 0 update(s) downloaded.,,2025-07-28T20:08:42.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download has started.,,2025-07-28T20:07:57.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Status Changed,Network Adapter Status changed:  InterfaceName : 'Intel(R) Wi-Fi 6E AX211 160MHz' InterfaceIndex : 12 Status changed : 'Down' -> 'Up',,2025-07-28T20:07:09.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Microsoft.YourPhone', Version: '1.25061.51.0', User: '<System>'",,2025-07-28T16:02:58.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Status Changed,Network Adapter Status changed:  InterfaceName : 'Intel(R) Wi-Fi 6E AX211 160MHz' InterfaceIndex : 12 Status changed : 'Up' -> 'Down',,2025-07-28T15:53:55.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Added,"Network Adapter added: 'Realtek USB GbE Family Controller', MacAddress: 'AC:91:A1:94:E0:4C', IPAddress: '192.168.86.23;fe80::ab68:633b:1067:33e5', InstallDate: '2025-07-28T15:42:59Z'",,2025-07-28T15:42:59.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Microsoft 365 Apps for enterprise - en-us', Version: '16.0.18925.20184', User: '<System>'",,2025-07-28T14:43:53.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Added,"Network Adapter added: 'Microsoft Wi-Fi Direct Virtual Adapter #4', MacAddress: '9A:59:7A:AD:BA:BF', IPAddress: '169.254.83.185;fe80::cd77:16ed:b5cb:a897', InstallDate: '2025-07-28T14:42:49Z'",,2025-07-28T14:42:49.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download is complete. 0 update(s) downloaded.,,2025-07-28T14:36:19.000+0000
+Hospitality,3-1655,Hardware,Disk Volume Removed,Disk volume removed: 'D:',,2025-07-28T14:35:53.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download has started.,,2025-07-28T14:35:49.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Apply Patch Complete,Patch management update is complete.,,2025-07-28T14:35:43.000+0000
+Hospitality,3-1655,Hardware,Disk Partition Removed,"Disk partition removed: 'Disk #1, Partition #0'",,2025-07-28T14:33:55.000+0000
+Hospitality,3-1655,Hardware,Disk Drive Removed,"Disk drive removed : '\\.\PHYSICALDRIVE1' Additional Info: ( USB, SanDisk 3.2Gen1, Removable media other than floppy )",,2025-07-28T14:33:55.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Microsoft Edge', Version: '138.0.3351.109', User: '<System>'",,2025-07-28T14:33:53.000+0000
+Hospitality,3-1655,Software Patching,Software Patch Scan Complete,"Software Updates Scan Complete : Approved: 1, Rejected: 9, Pending approval: 2",,2025-07-28T14:34:49.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download is complete. 0 update(s) downloaded.,,2025-07-28T14:32:22.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Deleted,"Network Adapter removed: 'Microsoft Wi-Fi Direct Virtual Adapter #4', MacAddress: '9A:59:7A:AD:BA:BF', IPAddress: '169.254.83.185;fe80::cd77:16ed:b5cb:a897'",,2025-07-28T14:32:05.000+0000
+Hospitality,3-1655,Hardware,Disk Partition Added,"Disk partition added : 'Disk #1, Partition #0', Capacity: '61523099648'. Install Date: '2025-07-28T14:32:04Z'",,2025-07-28T14:32:04.000+0000
+Hospitality,3-1655,Hardware,Disk Volume Added,"Disk volume added : 'D:', Capacity: '61523099648'. Install Date: '2025-07-28T14:32:04Z'",,2025-07-28T14:32:04.000+0000
+Hospitality,3-1655,Hardware,Disk Drive Added,"Disk drive added : '\\.\PHYSICALDRIVE1', Capacity: '61516869120', Install Date: '2025-07-28T14:32:04Z' Additional Info: ( USB, SanDisk 3.2Gen1, Removable media other than floppy )",,2025-07-28T14:32:04.000+0000
+Hospitality,3-1655,Software Patching,Software Patch Scan Started,Patch management scan has started.,,2025-07-28T14:31:52.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download has started.,,2025-07-28T14:30:51.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Apply Patch Started,Patch management update has started.,,2025-07-28T14:31:01.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Status Changed,Network Adapter Status changed:  InterfaceName : 'Intel(R) Wi-Fi 6E AX211 160MHz' InterfaceIndex : 12 Status changed : 'Down' -> 'Up',,2025-07-25T14:09:17.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Deleted,"Network Adapter removed: 'Realtek USB GbE Family Controller', MacAddress: 'AC:91:A1:94:E0:4C', IPAddress: '10.0.20.123;fe80::ab68:633b:1067:33e5'",,2025-07-25T14:09:17.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Microsoft.XboxGamingOverlay', Version: '7.325.7090.0', User: '<System>'",,2025-07-25T04:09:18.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'OpenAI.ChatGPT-Desktop', Version: '1.2025.202.0', User: '<System>'",,2025-07-24T23:18:45.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'DellInc.DellDigitalDelivery', Version: '5.6.1.0', User: '<System>'",,2025-07-24T23:18:45.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download is complete. 0 update(s) downloaded.,,2025-07-24T22:59:49.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download has started.,,2025-07-24T22:58:59.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Added,"Network Adapter added: 'Realtek USB GbE Family Controller', MacAddress: 'AC:91:A1:94:E0:4C', IPAddress: '10.0.20.123;fe80::ab68:633b:1067:33e5', InstallDate: '2025-07-24T22:56:43Z'",,2025-07-24T22:56:43.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Status Changed,Network Adapter Status changed:  InterfaceName : 'Intel(R) Wi-Fi 6E AX211 160MHz' InterfaceIndex : 12 Status changed : 'Up' -> 'Down',,2025-07-24T22:19:42.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Deleted,"Network Adapter removed: 'Realtek USB GbE Family Controller #2', MacAddress: 'AC:91:A1:94:E0:4C', IPAddress: '169.254.247.244;fe80::ab68:633b:1067:33e5'",,2025-07-24T22:19:42.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Added,"Network Adapter added: 'Microsoft Wi-Fi Direct Virtual Adapter #4', MacAddress: '9A:59:7A:AD:BA:BF', IPAddress: '169.254.83.185;fe80::cd77:16ed:b5cb:a897', InstallDate: '2025-07-24T20:42:39Z'",,2025-07-24T20:42:39.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Microsoft.OneDriveSync', Version: '25127.701.6.0', User: '<System>'",,2025-07-24T20:37:42.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Microsoft OneDrive', Version: '25.127.0701.0006', User: '<System>'",,2025-07-24T20:37:42.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download is complete. 0 update(s) downloaded.,,2025-07-24T20:34:51.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download has started.,,2025-07-24T20:33:08.000+0000
+Hospitality,3-1655,Hardware,Rebooted,System rebooted at '2025-07-24T20:29:41Z',,2025-07-24T20:31:47.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Deleted,"Network Adapter removed: 'Microsoft Wi-Fi Direct Virtual Adapter #4', MacAddress: '9A:59:7A:AD:BA:BF', IPAddress: '169.254.83.185;fe80::cd77:16ed:b5cb:a897'",,2025-07-24T20:31:48.000+0000
+Hospitality,3-1655,Hardware,User Account Logged In,"User logged in: 'EW\afigueroa', Logged in time: '2025-07-24T20:31:34Z'",,2025-07-24T20:31:33.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download is complete. 0 update(s) downloaded.,,2025-07-24T19:34:17.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Scan Complete,Patch management scan is complete.,,2025-07-24T19:34:17.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download has started.,,2025-07-24T19:30:03.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Scan Started,Patch management scan has started.,,2025-07-24T19:30:03.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Microsoft.Windows.Photos', Version: '2025.11070.8001.0', User: '<System>'",,2025-07-24T19:07:14.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download is complete. 0 update(s) downloaded.,,2025-07-24T15:24:43.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download has started.,,2025-07-24T15:24:02.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Status Changed,Network Adapter Status changed:  InterfaceName : 'Intel(R) Wi-Fi 6E AX211 160MHz' InterfaceIndex : 12 Status changed : 'Down' -> 'Up',,2025-07-24T15:23:04.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Added,"Network Adapter added: 'Realtek USB GbE Family Controller #2', MacAddress: 'AC:91:A1:94:E0:4C', IPAddress: '169.254.247.244;fe80::ab68:633b:1067:33e5', InstallDate: '2025-07-24T15:23:04Z'",,2025-07-24T15:23:04.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Status Changed,Network Adapter Status changed:  InterfaceName : 'Intel(R) Wi-Fi 6E AX211 160MHz' InterfaceIndex : 12 Status changed : 'Up' -> 'Down',,2025-07-24T14:47:53.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Microsoft.OutlookForWindows', Version: '1.2025.716.500', User: '<System>'",,2025-07-24T14:12:55.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Status Changed,Network Adapter Status changed:  InterfaceName : 'Intel(R) Wi-Fi 6E AX211 160MHz' InterfaceIndex : 12 Status changed : 'Down' -> 'Up',,2025-07-24T14:07:51.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Deleted,"Network Adapter removed: 'Realtek USB GbE Family Controller', MacAddress: 'AC:91:A1:94:E0:4C', IPAddress: '10.0.20.123;fe80::ab68:633b:1067:33e5'",,2025-07-24T14:07:51.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'MicrosoftWindows.CrossDevice', Version: '1.25062.30.0', User: '<System>'",,2025-07-24T14:04:54.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Apply Patch Complete,Patch management update is complete.,,2025-07-24T12:17:27.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Apply Patch Started,Patch management update has started.,,2025-07-24T12:13:01.000+0000
+Hospitality,3-1655,Software Patching,Software Patch Apply Patch Complete,Patch management apply patch completed. Successful: 1 Failed: 0,,2025-07-24T12:07:15.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Google Chrome', Version: '138.0.7204.169', User: '<System>'",,2025-07-24T12:04:43.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Information,"Patch management update will start in 0 hour(s), 13 minute(s).",,2025-07-24T12:00:00.000+0000
+Hospitality,3-1655,Software Patching,Software Patch Apply Patch Started,Patch management apply patch started,,2025-07-24T12:00:01.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download is complete. 0 update(s) downloaded.,,2025-07-23T15:34:05.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download has started.,,2025-07-23T15:33:20.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Apply Patch Complete,Patch management update is complete.,,2025-07-23T12:18:56.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Apply Patch Started,Patch management update has started.,,2025-07-23T12:15:01.000+0000
+Hospitality,3-1655,Software Patching,Software Patch Apply Patch Complete,Patch management apply patch completed. Successful: 0 Failed: 0,,2025-07-23T12:05:09.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Information,"Patch management update will start in 0 hour(s), 15 minute(s).",,2025-07-23T12:00:00.000+0000
+Hospitality,3-1655,Software Patching,Software Patch Apply Patch Started,Patch management apply patch started,,2025-07-23T12:00:00.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Microsoft.YourPhone', Version: '1.25061.45.0', User: '<System>'",,2025-07-23T09:58:53.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'MicrosoftWindows.CrossDevice', Version: '1.25061.25.0', User: '<System>'",,2025-07-23T09:56:53.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Mozilla Firefox (x64 en-US)', Version: '141.0', User: '<System>'",,2025-07-23T09:46:52.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'MicrosoftWindows.CrossDevice', Version: '1.25062.30.0', User: '<System>'",,2025-07-23T04:58:28.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'MicrosoftWindows.CrossDevice', Version: '1.25061.25.0', User: '<System>'",,2025-07-23T04:56:29.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download is complete. 0 update(s) downloaded.,,2025-07-22T19:34:52.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Scan Complete,Patch management scan is complete.,,2025-07-22T19:34:52.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download has started.,,2025-07-22T19:30:02.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Scan Started,Patch management scan has started.,,2025-07-22T19:30:02.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download is complete. 0 update(s) downloaded.,,2025-07-22T15:33:00.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download has started.,,2025-07-22T15:32:24.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Apply Patch Complete,Patch management update is complete.,,2025-07-22T12:08:47.000+0000
+Hospitality,3-1655,Software Patching,Software Patch Apply Patch Complete,Patch management apply patch completed. Successful: 0 Failed: 0,,2025-07-22T12:05:09.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Apply Patch Started,Patch management update has started.,,2025-07-22T12:05:02.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Information,"Patch management update will start in 0 hour(s), 5 minute(s).",,2025-07-22T12:00:01.000+0000
+Hospitality,3-1655,Software Patching,Software Patch Apply Patch Started,Patch management apply patch started,,2025-07-22T12:00:01.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'MicrosoftWindows.CrossDevice', Version: '1.25062.29.0', User: '<System>'",,2025-07-22T00:35:26.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Status Changed,Network Adapter Status changed:  InterfaceName : 'Intel(R) Wi-Fi 6E AX211 160MHz' InterfaceIndex : 12 Status changed : 'Up' -> 'Down',,2025-07-21T22:41:12.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Added,"Network Adapter added: 'Realtek USB GbE Family Controller', MacAddress: 'AC:91:A1:94:E0:4C', IPAddress: '10.0.20.123;fe80::ab68:633b:1067:33e5', InstallDate: '2025-07-21T22:41:12Z'",,2025-07-21T22:41:12.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Status Changed,Network Adapter Status changed:  InterfaceName : 'Intel(R) Wi-Fi 6E AX211 160MHz' InterfaceIndex : 12 Status changed : 'Down' -> 'Up',,2025-07-21T22:04:03.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Deleted,"Network Adapter removed: 'Realtek USB GbE Family Controller', MacAddress: 'AC:91:A1:94:E0:4C', IPAddress: '192.168.86.36;2600:6c4e:187f:6581:dd51:af0b:633c:b2fc|fd4a:10a9:64dd:854f:e43c:d580:8386:cfbb|2600:6c4e:187f:6581:89f2:d38e:f683:d1c5|fd4a:10a9:64dd:854f:89f2:d38e:f683:d1c5|fe80::ab68:633b:1067:33e5'",,2025-07-21T22:04:03.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Microsoft.OneDriveSync', Version: '25122.624.4.0', User: '<System>'",,2025-07-21T21:19:04.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Microsoft OneDrive', Version: '25.122.0624.0004', User: '<System>'",,2025-07-21T21:19:04.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Deleted,"Network Adapter removed: 'EW-VPN', MacAddress: '', IPAddress: '10.70.50.6;'",,2025-07-21T20:13:58.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Added,"Network Adapter added: 'EW-VPN', MacAddress: '', IPAddress: '10.70.50.6;', InstallDate: '2025-07-21T18:31:47Z'",,2025-07-21T18:31:47.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Status Changed,Network Adapter Status changed:  InterfaceName : 'Intel(R) Wi-Fi 6E AX211 160MHz' InterfaceIndex : 12 Status changed : 'Up' -> 'Down',,2025-07-21T17:11:38.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Added,"Network Adapter added: 'Realtek USB GbE Family Controller', MacAddress: 'AC:91:A1:94:E0:4C', IPAddress: '192.168.86.36;2600:6c4e:187f:6581:dd51:af0b:633c:b2fc|2600:6c4e:187f:6581:89f2:d38e:f683:d1c5|fd4a:10a9:64dd:854f:89f2:d38e:f683:d1c5|fd4a:10a9:64dd:854f:e43c:d580:8386:cfbb|fe80::ab68:633b:1067:33e5', InstallDate: '2025-07-21T17:11:38Z'",,2025-07-21T17:11:38.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Microsoft.ZuneVideo', Version: '10.25071.10101.0', User: '<System>'",,2025-07-21T15:50:33.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Clipchamp.Clipchamp', Version: '4.3.10120.0', User: '<System>'",,2025-07-21T15:50:33.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Microsoft 365 Apps for enterprise - en-us', Version: '16.0.18925.20168', User: '<System>'",,2025-07-21T15:46:34.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download is complete. 0 update(s) downloaded.,,2025-07-21T15:45:52.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Scan Complete,Patch management scan is complete.,,2025-07-21T15:45:52.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download has started.,,2025-07-21T15:42:38.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download is complete. 0 update(s) downloaded.,,2025-07-21T15:42:38.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Added,"Network Adapter added: 'Microsoft Wi-Fi Direct Virtual Adapter #4', MacAddress: '9A:59:7A:AD:BA:BF', IPAddress: '169.254.83.185;fe80::cd77:16ed:b5cb:a897', InstallDate: '2025-07-21T15:41:30Z'",,2025-07-21T15:41:30.000+0000
+Hospitality,3-1655,Software,Software Updated,"Software updated: 'Microsoft.BingSearch', Version: '1.1.37.0', User: '<System>'",,2025-07-21T15:32:33.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download has started.,,2025-07-21T15:32:11.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Scan Started,Patch management scan has started.,,2025-07-21T15:32:13.000+0000
+Hospitality,3-1655,Hardware,Rebooted,System rebooted at '2025-07-21T15:28:23Z',,2025-07-21T15:30:58.000+0000
+Hospitality,3-1655,Hardware,User Account Logged In,"User logged in: 'EW\afigueroa', Logged in time: '2025-07-21T15:30:21Z'",,2025-07-21T15:30:21.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Scan Started,Patch management scan has started.,,2025-07-21T15:27:41.000+0000
+Hospitality,3-1655,Hardware,Rebooted,System rebooted at '2025-07-21T15:24:03Z',,2025-07-21T15:26:25.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Deleted,"Network Adapter removed: 'Microsoft Wi-Fi Direct Virtual Adapter #4', MacAddress: '9A:59:7A:AD:BA:BF', IPAddress: ';fe80::cd77:16ed:b5cb:a897'",,2025-07-21T15:26:25.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,Updated scheduled reboot. Reason: User logged out. New Reboot Time (UTC): 2025-07-22T12:00:00Z,,2025-07-21T15:23:07.000+0000
+Hospitality,3-1655,Software Patching,Software Patch Scan Complete,"Patch management scan FAILED to complete. ERROR: Windows communication error, Find failed when initiating missing patch search",,2025-07-21T15:20:37.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download error. Patch download failed: -3004.,,2025-07-21T15:20:10.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download has started.,,2025-07-21T15:20:04.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Status Changed,Network Adapter Status changed:  InterfaceName : 'Intel(R) Wi-Fi 6E AX211 160MHz' InterfaceIndex : 12 Status changed : 'Down' -> 'Up',,2025-07-21T15:18:49.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Deleted,"Network Adapter removed: 'EW-VPN', MacAddress: '', IPAddress: '10.70.50.6;'",,2025-07-21T15:18:49.000+0000
+Hospitality,3-1655,Hardware,Network Adapter Deleted,"Network Adapter removed: 'Realtek USB GbE Family Controller', MacAddress: 'AC:91:A1:94:E0:4C', IPAddress: '10.0.20.123;fe80::ab68:633b:1067:33e5'",,2025-07-21T15:18:49.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download error. Patch download failed: -3005.,,2025-07-21T15:18:01.000+0000
+Hospitality,3-1655,Hardware,User Account Logged Out,User logged out : 'EW\afigueroa',,2025-07-21T15:17:57.000+0000
+Hospitality,3-1655,Software Patching,Software Patch Scan Started,Patch management scan has started.,,2025-07-21T15:18:45.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,Updated scheduled reboot. Reason: A user needed to be prompted due to reboot settings. New Reboot Time (UTC): 2025-07-21T15:17:23Z,,2025-07-21T15:17:36.000+0000
+Hospitality,3-1655,OS Patching,OS Patching Warning,OS patch download has started.,,2025-07-21T15:17:18.000+0000
+Hospitality,3-1655,Script,Completed,This machine cannot run any more Windows Patch Management jobs because there is a pending reboot. Please reboot the machine.,,2025-07-21T15:17:21.000+0000
