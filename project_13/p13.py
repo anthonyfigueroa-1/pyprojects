@@ -1,4 +1,5 @@
 from datetime import datetime
+import re
 
 def get_csv_data(filepath):
     import csv
@@ -11,10 +12,11 @@ def parse_args():
     import argparse
 
     parse = argparse.ArgumentParser()
+    parse.add_argument("filepath", help="Filepath of csv file to parse")
     parse.add_argument("--activity", help="Filter by activitiy happening in each log entry")
     parse.add_argument("--date", help="Filter logs by date")
     parse.add_argument("--save", help="Where to save report to")
-
+    
     return parse.parse_args()
 
 def convert_time(alert, date = None):
@@ -26,20 +28,16 @@ def convert_time(alert, date = None):
     return alert_ts
 
 def filter_alerts(alerts, activity, date):
-    import re
-
     filtered_alerts = []
 
     for t in alerts:
+        alert_ts = convert_time(t, date) if date else convert_time(t)
         if date:
-            alert_ts, date_ts = convert_time(t, date = date)
-        else:
-            alert_ts = convert_time(t)
+            alert_ts, date_ts = alert_ts
         if (date is None or date_ts.date() == alert_ts.date()) and (activity is None or re.search(rf"{re.escape(activity)}", t["Activity"], re.IGNORECASE)):
             filtered_alerts.append(t) 
 
     return filtered_alerts
-
 
 def format_alert(alert):
     alert_ts = convert_time(alert)
@@ -48,18 +46,28 @@ def format_alert(alert):
 
     format = []
 
-    format.append(f"{time_stamp} {alert.get("Group", "")} - {alert.get("Activity", "")}")
-    format.append(f"Device: {alert.get("Device", "")} | Org: {alert.get("Hospitality")}")
-    format.append(f"Description: {alert.get("Description", "")}\n")
+    format.append(f"{time_stamp} {alert.get('Group', '')} - {alert.get('Activity', '')}")
+    format.append(f"Device: {alert.get('Device', '')} | Org: {alert.get('Organization')}")
+
+    interface = re.search(r"^(.*?):\s*InterfaceName :\s*'([^']+)'", alert.get("Description", ""))
+    status = re.search(r"OperationalStatus :\s*(\w+)", alert.get("Description", ""))
     
+    if interface or status:
+        format.append(f"Description: {interface.group(1)}")
+        if interface:
+            format.append(f"Interface: {interface.group(2)}")
+        if status:
+            format.append(f"Status: {status.group(1)}")
+    else:
+        format.append(f"Description: {alert.get('Description', '')}")
+    
+    format.append("")
+
     return format
 
 def report(alerts, save = None):
-    filter_count = 0
-
     for temp in alerts:
         formatted_alert = format_alert(temp)
-        filter_count += 1
         for line in formatted_alert:
             print(line)
     if save:
@@ -69,26 +77,27 @@ def report(alerts, save = None):
                 for line in formatted_alert:
                     file.write(line + "\n")
 
-    print(f"\n{filter_count} entries matched filter.")
+    print(f"\n{len(alerts)} entries matched filter.\n")
 
     if save:
         print(f"\nSaving to {save}\n")
 
 def main():
+    arg = parse_args()
+
+    activity = arg.activity if arg.activity else None
+    date = arg.date if arg.date else None
+    save = arg.save if arg.save else None
+    filepath = arg.filepath if arg.filepath else None
+
     try:
-        alerts = get_csv_data("mycomp.csv")
+        alerts = get_csv_data(filepath)
     except FileNotFoundError:
         print("File not found. Exiting...")
         exit()
     if not alerts:
         print("File is empty. Exiting...")
         exit()
-
-    arg = parse_args()
-
-    activity = arg.activity if arg.activity else None
-    date = arg.date if arg.date else None
-    save = arg.save if arg.save else None
 
     filtered_alerts = filter_alerts(alerts, activity, date)     
 

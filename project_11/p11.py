@@ -21,7 +21,7 @@ def filter_alerts(alerts, severity=None, unack_only=False):
     return [
             t for t in alerts if
             (severity is None or t.get("severity", "").lower() == severity.lower()) and
-            (unack_only is False or t.get("acknowledged", "") == unack_only)]
+            (not unack_only or not t.get("acknowledged", False))]
 
 def format_alert(alert):
     from datetime import datetime
@@ -65,12 +65,14 @@ def main():
         data = load_alert_data("alerts.json")
     except FileNotFoundError:
         print("alerts.json not found")
+        exit()
     if not data:
         print("alerts.json is empty")
+        exit()
 
     args = parse_filters()
     severity = args.severity.strip() if args.severity else None
-    unack_only = args.unacknowledged_only if args.unacknowledged_only else False
+    unack_only = args.unacknowledged_only
     save = args.save.strip() if args.save else None
 
     filtered_alerts = filter_alerts(data, severity = severity, unack_only = unack_only)

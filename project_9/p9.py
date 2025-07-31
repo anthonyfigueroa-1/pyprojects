@@ -7,20 +7,10 @@ def load_transaction_data(filepath):
     return transactions
 
 def filter_transactions(transactions, category=None, min_amount=None):
-    if category is not None and min_amount is not None:
-        filtered = [t for t in transactions if float(t.get("amount")) > min_amount]
-        filtered = [t for t in transactions if t.get("category", "").lower() == category.lower()]
-        print(filtered)
-        return filtered
-    elif min_amount is not None and category is None:
-        filtered = [t for t in transactions if float(t.get("amount")) > min_amount]
-        return filtered
-    elif category is not None and min_amount is None:
-        filtered = [t for t in transactions if t.get("category", "").lower() == category.lower()]
-        return filtered
-    else:
-        return transactions
-
+    return [
+        t for t in transactions
+        if (category is None or t.get("category", "").lower() == category.lower()) 
+        and (min_amount is None or float(t.get("amount")) > min_amount)]
 def format_transaction(txn):
     formatted_txn = []
     for temp in txn:
@@ -42,7 +32,7 @@ def generate_report(filtered_txns, category=None, min_amount=None):
     if min_amount:
         filters.append(f"min_amount=${min_amount:.2f}")
 
-    report.append(" ===== Budget Summary Report ===== \n")
+    report.append("\n ===== Budget Summary Report ===== \n")
 
     for line in formatted_txn:
         report.append(line)
@@ -52,7 +42,7 @@ def generate_report(filtered_txns, category=None, min_amount=None):
     if filters:
         report.append(f"Filtered by: {', '.join(filters)}") 
         
-    report.append("\n ================================= ")
+    report.append("\n ================================= \n")
 
     for line in report:
         print(line)
@@ -71,14 +61,14 @@ def main():
         print("transactions.json is empty.")
         exit()
 
-    cat = input("Enter a category to filter by (or leave blank): ")
-    min = input("Enter a minimum amount (or leave blank): ")
+    ctgry = input("Enter a category to filter by (or leave blank): ")
+    min_amt = input("Enter a minimum amount (or leave blank): ")
 
-    cat = cat if cat else None
-    min = float(min) if min else None
+    ctgry = ctgry if ctgry else None
+    min_amt = float(min_amt) if min_amt else None
 
-    filtered = filter_transactions(trxn, category = cat, min_amount=min)
-    generate_report(filtered, category=cat, min_amount=min)
+    filtered = filter_transactions(trxn, category = ctgry, min_amount=min_amt)
+    generate_report(filtered, category=ctgry, min_amount=min_amt)
 
 if __name__ == "__main__":
     try:

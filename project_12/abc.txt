@@ -8,24 +8,12 @@ Body: Looks like you are talking about disks
 Sent on: 2025-07-22 14:11
 
 From: anthony@routestack.net
-To: user2@example.com
-Subject: Re: Slow system performance
-Body: Looks like you are talking about cpu's
-Sent on: 2025-07-22 15:02
-
-From: anthony@routestack.net
-To: user3@example.com
-Subject: Re: Question about alerts
-Body: Someone will get back to you about this
-Sent on: 2025-07-22 16:40
-
-From: anthony@routestack.net
 To: user4@example.com
 Subject: Re: Ping failing
 Body: Looks like you are talking about networks
 Sent on: 2025-07-22 17:55
 
 ===============================
-Total replies: 4
-Smart replies: 3 | Default replies: 1
+Total replies: 2
+Smart replies: 2 | Default replies: 0
 

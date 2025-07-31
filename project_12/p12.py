@@ -5,6 +5,7 @@ def load_email_data(filepath):
         emails = json.load(file)
 
     return emails
+
 def parse_args():
     import argparse
 
@@ -20,13 +21,13 @@ def filter_emails(emails, priority = None, attachment_only = False):
     return [
             t for t in emails if
             (priority is None or t.get("priority", "") == priority) and
-            (not attachment_only or not t.get("has_attachment", False))]
+            (not attachment_only or t.get("has_attachment", False))]
 
 def detect_intent(email_body):
     if "disk" in email_body.get("body", "").lower():
         return "Looks like you are talking about disks", "smart"
     if "cpu" in email_body.get("body", "").lower():
-        return "Looks like you are talking about cpu's", "smart"
+        return "Looks like you are talking about CPUs", "smart"
     if "network" in email_body.get("body", "").lower():
         return "Looks like you are talking about networks", "smart"
     else:
