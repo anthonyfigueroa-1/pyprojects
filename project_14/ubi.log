@@ -1,0 +1,4 @@
+2025-07-28 09:14:12 [ERROR] Device: EdgeRouter-X | IP: 192.168.1.1 | MAC: AA:BB:CC:DD:EE:FF | Message: Link Down
+2025-07-28 09:15:33 [INFO] Device: UniFi-AP | IP: 192.168.1.42 | MAC: 11:22:33:44:55:66 | Message: Connected
+2025-07-28 09:20:10 [WARNING] Device: EdgeRouter-X | IP: 192.168.1.1 | MAC: AA:BB:CC:DD:EE:FF | Message: High CPU (95%)
+2025-07-28 09:22:45 [ERROR] Device: Switch-01 | IP: 192.168.1.100 | MAC: AA:CC:11:DD:22:FF | Message: Port 3 Down
