@@ -1,4 +1,4 @@
-<h1>Simple python projects I am worked on to help understand the fundamentals of python.</h1>
+<h1>Simple python projects I have worked on to help me understand the fundamentals of python to build out automations for work.</h1>
 <h3>
 #1 is a simple calorie calculator, enter in how many calories you had for breakfast, lunch, and dinner and then enter in how much you calorie budget was for the day and the math will be done for you and will display whether you were above or below you calorie budget and by how much.<br><br>
 #2 checks for the strength of a password and lets you know whether it is strong, medium, or weak. And bases it off of length and whether or not a number is contained within the password.<br><br>

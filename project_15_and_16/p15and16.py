@@ -52,9 +52,13 @@ def filter_tickets(tickets, status, priority, date, agent):
 
     for ticket in tickets:
         if status:
-            ticket_status = status_map.get(f"{status.lower()}", "")
+            ticket_status = status_map.get(f"{status.lower()}", None)
+            if not ticket_status:
+                print("Not a valid status, ignoring filter")
         if priority:
-            ticket_priority = priority_map.get(f"{priority.lower()}", "")
+            ticket_priority = priority_map.get(f"{priority.lower()}", None)
+            if not ticket_priority:
+                print("Not a valid priority, ignoring filter")
         if date:
             ticket_date = format_date(ticket.get("created_at", ""), date=date)
         if agent:
@@ -127,6 +131,9 @@ def put_status(ticket, status_code):
 
     response = requests.put(url, json=payload, auth=HTTPBasicAuth(api, "X"), headers=header)
 
+    if response.status_code not in (200,201,202):
+        print("Failed to update status")
+
 def post_note(ticket, body):
     ticket_id = ticket.get("id", "")
 
@@ -140,6 +147,9 @@ def post_note(ticket, body):
 
     response = requests.post(url, json=payload, auth=HTTPBasicAuth(api, "X"), headers=header)
 
+    if response.status_code not in (200,201,202):
+        print("Failed to post note")
+
 def post_teams_message(tickets, acknowledge, resolve, add_note):
     if not tickets:
         return
@@ -148,22 +158,25 @@ def post_teams_message(tickets, acknowledge, resolve, add_note):
 
     for ticket in tickets:
         items = get_items(ticket)
-        updated_tickets.append(f"[Ticket #{items.get('id')}] {items.get('priority')} - {items.get('subject')}")
+        updated_tickets.append(f"<strong>[Ticket #{items.get('id')}]</strong> {items.get('priority')} - {items.get('subject')}")
 
     items_updated = []
     if acknowledge == True:
-        items_updated.append("Status set to pending")
+        items_updated.append("status set to pending")
     if resolve == True:
-        items_updated.append("Status set to resolved")
+        items_updated.append("status set to resolved")
     if add_note:
         items_updated.append("note added")
 
-    text = f"{', '.join(updated_tickets)}<br>Updated: {', '.join(items_updated)}."
+    text = f"{'<br>'.join(updated_tickets)}<br><br><strong>Updated</strong>: {', '.join(items_updated)}."
 
     url = ""
     payload = {"text": text}
 
     response = requests.post(url, json=payload)
+
+    if response.status_code not in (200,201,202):
+        print("Failed to post teams message")
 
 def report_GET(tickets, save):
     report = []
